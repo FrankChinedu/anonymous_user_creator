@@ -35,7 +35,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.15",
     "prettier": "^2.2.0",
-    "ts-node": "^9.0.0"
+    "ts-node": "^9.0.0",
+    "unique-names-generator": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "^14.14.9",

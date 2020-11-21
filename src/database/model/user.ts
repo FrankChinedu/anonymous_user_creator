@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 interface IUser {
   ip: string;
   username: string;
@@ -9,7 +8,7 @@ interface userModelInterface extends mongoose.Model<UserDoc> {
   build(attr: IUser): UserDoc;
 }
 
-interface UserDoc extends mongoose.Document {
+export interface UserDoc extends mongoose.Document {
   ip: string;
   username: string;
 }
@@ -18,6 +17,7 @@ const userSchema = new mongoose.Schema({
   ip: {
     type: String,
     required: true,
+    unique: true,
   },
   username: {
     type: String,
